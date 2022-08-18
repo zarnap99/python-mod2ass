@@ -1,0 +1,233 @@
+#program 1#
+#Write a Python program to check if a number is positive, negative or zero.# 
+
+num=23
+if num>0:
+    print("number is possitive")
+elif num<0
+    print("number is negative")   
+else:
+    print("zero")  
+
+*******************************************************************************************************
+#program 2#
+#Write a Python program to get the Factorial number of given number.#
+
+num=int(input("enter the number:"))
+fact=1
+i=1
+while i<=num:
+    fact=fact*i 
+    i=i+1
+print(f"factorial:{fact}")
+********************************************************************************************************
+#program 3#
+# Write a Python program to get the Fibonacci series of given range.#
+
+a=0
+b=2
+i=5
+while i<10:
+    c=a+b
+    print(f"{c}") 
+    a=b
+    b=c
+    i+=1
+********************************************************************************************************
+#question 4#
+#How memory is managed in Python?#
+-->>Memory management in Python involves a private heap containing all Python objects and data structures.
+The management of this private heap is ensured internally by the Python memory manager.
+********************************************************************************************************
+
+#question 5#
+#What is the purpose continue statement in python?#
+-->>The continue statement in Python returns the control to the beginning of the while loop.
+The continue statement rejects all the remaining statements in the current iteration of the loop and 
+moves the control back to the top of the loop.
+The continue statement can be used in both while and for loops.
+**********************************************************************************************************
+#program 6#
+#Write python program that swap two number with temp variable and without temp variable.#
+zarna=23
+patel=45
+temp=0
+
+temp==zarna 
+zarna==patel
+patel==temp
+
+print('swap the number:zarna',patel)
+print('swap the number:patel',zarna)
+***********************************************************************************************************
+#program 7#
+#Write a Python program to find whether a given number is even or odd, print out an appropriate message to the user.#
+
+num=int(input('enter the letter:'))
+i=num%2
+
+if i==1:  
+    print ("number is an odd number")
+else:   
+     print ("number is an even number")
+
+*****************************************************************************************************************
+#program 8#
+#Write a Python program to test whether a passed letter is a vowel or not.#
+A=input('enter the letter:')
+if(A=='A' or A=='E' or A=='I' or A=='O' or A=='U'):
+    print("latter is vowel")
+else:
+    print("latter is not vowel")
+*****************************************************************************************************************
+#program 9#
+#Write a Python program to sum of three given integers. However, if two values are equal sum will be zero.#
+
+num1=23
+num2=23
+num3=45
+add=num1+num2+num3
+if num1==num2 or num2==num3 or num3==num1:
+    print("addition:0")
+else:
+    print("addition:",(add))
+
+****************************************************************************************************************
+
+#program 10#
+#Write a Python program that will return true if the two given integer values are equal or their sum or difference is 5.#
+
+a=2
+z=3
+
+if (a+z)==5 or a==z:
+    print('true')
+else:
+    print('false')
+*****************************************************************************************************************    
+
+#program 11#
+#Write a python program to sum of the first n positive integers.#
+
+num=int(input('enter the number:'))
+sum=(num*(num+1)/2)
+print("Sum of the first", num ,"positive integers:",sum)
+********************************************************************************************************************
+#program12#
+#Write a Python program to calculate the length of a string.#
+str1="zarna learning python"
+print(len(str1))
+*******************************************************************************************************************
+#program13#
+#Write a Python program to count the number of characters (character frequency) in a string #
+str1="zarna learning python"
+str1.count('a')
+*******************************************************************************************************************
+#program14#
+#What are negative indexes and why are they used?# 
+
+-->> Python programming language supports negative indexing of arrays, 
+something which is not available in arrays in most other programming languages.
+This means that the index value of -1 gives the last element, and -2 gives the second last element of an array.
+The negative indexing starts from where the array ends.
+The negative index is used to remove any new-line spaces from the string and allow the string to except the last character 
+that is given as S[:-1]. The negative index is also used to show the index to represent the string in correct order.
+
+ex:
+arr=[10,20,30,80,90,100]
+print(arr[-1])
+
+output:
+100
+
+***********************************************************************************************************************
+#program15#
+#Write a Python program to count occurrences of a substring in a string#
+
+str1="zarna learning python & learning php"
+print(str1.count("learning"))
+print()
+***********************************************************************************************************************
+#program16#
+#Write a Python program to count the occurrences of each word in a given sentence #
+
+*************************************************************************************************************************
+
+#program17#
+#Write a Python program to get a single string from two given strings, #
+#separated by a space and swap the first two characters of each string. #
+
+
+str1 = input("Enter String1 :")
+str2 =input("Enter String 2 :")
+ 
+x=str1[0:2]
+ 
+str1=str1.replace(str1[0:2],str2[0:2])
+ 
+str2=str2.replace(str2[0:3],x)
+ 
+print("new string 1 after swap :- ",str1)
+print("new string 2 after swap :- ",str2)
+*****************************************************************************************************************************
+#program18#
+#Write a Python program to add 'ing' at the end of a given string (length should be at least 3).#
+#If the given string already ends with 'ing' then add 'ly' instead if the string length of the given string is less than 3, #
+#leave it unchanged.#
+str1="zarna learning python programming" 
+str1.replace("ing","ly",3)
+************************************************************************************************************************
+#program19#
+#Write a Python program to find the first appearance of the substring 'not' and 'poor' from a given string,#
+#if 'not' follows the 'poor', replace the whole 'not'...'poor' substring with 'good'. Return the resulting string. #
+***************************************************************************************************************************
+#program20#
+#Write a Python function that takes a list of words and returns the length of the longest one.# 
+
+l1=['python','java','php','c','android']
+l2=[]
+
+for i in l1:
+    l2.append(len(i))
+    
+num=max(l2)
+idx=l2.index(num)
+l1[idx]
+*************************************************************************************************************************
+#program21#
+#Write a Python function to reverses a string if its length is a multiple of 4.# 
+
+name=input("enter a string:")
+
+if(len(name)%4==0):  
+    print(name[::-1])
+else:
+    print("")
+    
+*************************************************************************************************************************
+#program22#
+#Write a Python program to get a string made of the first 2 and the last 2 chars from a given a string.#
+#If the string length is less than 2, return instead of the empty string.#
+#Sample String: w3resource'# 
+#Expected Result: 'w3ce'# 
+#Sample String: 'w3' #
+#Expected Result: 'w3w3'# 
+#Sample String: ' w' #
+#Expected Result: Empty String #
+
+str1=input("enter the string:")
+if len(str1)<2:
+    print("empty string")
+else:
+    s=str1[:2]+str1[-2:]
+    print(s)
+
+**************************************************************************************************************************
+#program23#
+#Write a Python function to insert a string in the middle of a string#
+
+str1 = 'zarna python'
+str2 = 'learning'
+char = len(str1) // 2
+idx = char-  1
+str1[:6] + str2 + str1[5:]
